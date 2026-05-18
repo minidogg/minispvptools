@@ -1,8 +1,8 @@
 {
     "format_version": 2,
     "header": {
-        "name": "Grindless PvP Engine",
-        "description": "pack.description",
+        "name": "Mini's PvP Tools",
+        "description": "I might add a description eventually.",
         "uuid": "2817c625-5995-47e0-afe9-e743c7d05693",
         "version": [1, 0, 0],
         "min_engine_version": [1, 16, 0]
