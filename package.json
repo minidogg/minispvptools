@@ -1,0 +1,32 @@
+{
+  "name": "myaddonStarter",
+  "version": "1.0.0",
+  "productName": "Minecraft Add-On Starter Project",
+  "description": "myaddonStarter",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@minecraft/core-build-tasks": "^5.5.0",
+    "babel-loader": "^10.1.1",
+    "esbuild": "^0.27.7",
+    "eslint-plugin-minecraft-linting": "^2.0.2",
+    "source-map": "^0.7.4",
+    "typescript": "^5.9.3",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.0"
+  },
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "dev": "node esbuild.config.js --watch"
+  },
+  "dependencies": {
+    "@minecraft/debug-utilities": "^1.0.0-beta.1.26.20-preview.23",
+    "@minecraft/math": "^2.2.7",
+    "@minecraft/server": "^2.8.0-beta.1.26.21-stable",
+    "@minecraft/server-ui": "^2.0.0",
+    "@minecraft/vanilla-data": "^1.21.90",
+    "simplex-noise": "^4.0.3"
+  },
+  "type": "module"
+}
