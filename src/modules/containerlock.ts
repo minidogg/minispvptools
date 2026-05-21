@@ -4,7 +4,7 @@ import { areItemsEqual } from '../lib/itemstack';
 export function loadModule(init: StartupEvent){
   world.beforeEvents.playerInteractWithBlock.subscribe((e)=>{
     let container = e.block.getComponent(BlockComponentTypes.Inventory)?.container
-    if(container&&(e.player.getGameMode()!=GameMode.Creative&&e.player.playerPermissionLevel!==PlayerPermissionLevel.Operator)&&e.block.below()?.typeId=="minecraft:bedrock"){
+    if(container&&(e.player.getGameMode()!=GameMode.Creative)&&e.block.below()?.typeId=="minecraft:bedrock"){
       e.cancel = true
       e.player.sendMessage("You must be in creative mode for this action because of the bedrock block below this container.")
     }
