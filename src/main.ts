@@ -2,10 +2,12 @@ import {system,world,CustomCommandRegistry, CommandPermissionLevel, StartupEvent
 
 import * as copyitems from './modules/copyitems'
 import * as containerlock from './modules/containerlock'
+import * as killsdeaths from './modules/killsdeaths'
 
 
 system.beforeEvents.startup.subscribe((init: StartupEvent) => {
   //todo: make a module auto loader using esbuild or something
   copyitems.loadModule(init)
   containerlock.loadModule(init)
+  killsdeaths.loadModule(init)
 })
